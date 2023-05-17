@@ -22,6 +22,31 @@ class homepage1 extends StatefulWidget {
 }
 
 class _homepage1State extends State<homepage1> {
+  int currentindex = 0;
+  // ignore: non_constant_identifier_names
+  List PageList = [
+    homepage(),
+    const Center(
+      child: Text("page 2",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "IndieFlower")),
+    ),
+    const Center(
+      child: Text("page 3",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "IndieFlower")),
+    ),
+    const Center(
+      child: Text("page 4",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "IndieFlower")),
+    ),
+    const Center(
+      child: Text("page 5",
+          style: TextStyle(
+              color: Colors.black, fontSize: 50, fontFamily: "IndieFlower")),
+    ),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
